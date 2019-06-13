@@ -1,0 +1,208 @@
+// 약관동의
+.agreement {
+  h3 {
+    font-weight: 700;
+    font-size: 22px;
+    color: #202c3f;
+  }
+  label {
+    font-size: 0.9375rem;
+    color: #2076ff;
+  }
+  .box__textarea {
+    background-color: #f8f8f8;
+    border: 1px solid #e1e1e1;
+    padding: 20px;
+    font-size: 1rem;
+    color: #555555;
+    margin-bottom: 0.9375rem;
+    &.scrollable {
+      max-height: 200px;
+      overflow-y: auto;
+    }
+  }
+}
+// 로그인
+.signin-form {
+  width: 100%;
+  input {
+    &[type="text"],
+    &[type="password"] {
+      font-size: 15px;
+      height: 45px;
+      background-color: #ffffff;
+      padding: 10px 15px;
+      @include placeholder {
+        font-weight: 500;
+        font-size: 15px;
+        color: #666666;
+      }
+    }
+    &.btn-submit {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin-top: 10px;
+      border: 0;
+      background: $color-primary;
+      padding: 15px 0;
+      font-weight: 500;
+      color: #fff;
+      font-size: 15px;
+    }
+  }
+  .signin-form-wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    h3 {
+      font-weight: 700;
+      margin-top: 0;
+      font-size: 1.375rem;
+      color: #202c3f;
+      margin-bottom: 15px;
+    }
+    nav.login-util-menu {
+      margin-top: 3.125rem;
+      border-top: 1px solid #e1e1e1;
+      ul {
+        font-size: 0;
+        margin-top: 24px;
+        margin-left: -1rem;
+        margin-right: -1rem;
+        text-align: center;
+        li {
+          display: inline-block;
+          vertical-align: middle;
+          a {
+            display: block;
+            position: relative;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 1;
+            color: #555555;
+            padding: 0 1rem;
+          }
+          &:not(:last-child) {
+            a {
+              &:after {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 1px;
+                height: 100%;
+                background-color: #cfcfcf;
+                content: "";
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .div_text {
+    margin-bottom: 10px;
+    input {
+      @include placeholder {
+        font-size: 0.9375rem;
+        font-weight: 400;
+        color: #666666;
+        font-family: $global-font-family;
+      }
+    }
+  }
+  .button_div {
+    input {
+      font-family: $global-font-family;
+    }
+  }
+}
+
+// 회원가입필드
+#wpmem_register_form {
+  h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 22px;
+    color: #202c3f;
+  }
+  p {
+    margin-bottom: 0;
+  }
+  .register-table {
+    width: 100%;
+    border-top: 1px solid $color-primary;
+    tr {
+      th,
+      td {
+        border-bottom: 1px solid #e1e1e1;
+      }
+      th {
+        text-align: left;
+        font-weight: 600;
+        font-size: 15px;
+        color: #555555;
+        background-color: #f8f8f8;
+        width: 18%;
+        padding: 5px 10px 5px 30px;
+        &[rowspan] {
+          & + td {
+            border-bottom: 0;
+            padding-bottom: 0;
+          }
+        }
+      }
+      td {
+        padding: 5px 10px;
+        font-size: 0;
+        .input-inline {
+          display: inline-block;
+          width: 100px;
+          margin-right: 6px;
+        }
+        #username {
+          width: calc(100% - 146px);
+          margin-right: 6px;
+        }
+        #user_postcode {
+          width: 200px;
+        }
+        #user_address,
+        #user_detailAddress {
+          width: calc(50% - 3px);
+        }
+        #user_detailAddress {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+// 가입완료
+.register_complete {
+  .fusion-column-wrapper {
+    padding: 3.75rem 0 !important;
+    background-color: #f8f8f8;
+    text-align: center;
+    border: 1px solid #e1e1e1;
+    .btn-primary {
+      margin-right: 10px;
+    }
+    h3 {
+      font-weight: 700;
+      font-size: 28px;
+      color: #202c3f;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      i {
+        color: $color-primary;
+      }
+    }
+    p {
+      margin-bottom: 2.5rem;
+      font-size: 1rem;
+      color: #555555;
+    }
+  }
+}

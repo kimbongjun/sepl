@@ -1,0 +1,71 @@
+.fusion-header-wrapper {
+    @include respond-min(sm) {
+        position: absolute;
+        left: 0;
+        right: 0;
+        /* overflow: hidden; */
+        z-index: 9999;
+        height: 90px;
+        /* box-shadow: rgba(0, 0, 0, .117647) 0 1px 3px; */
+    }
+
+    .fusion-header {
+        @include respond-min(sm) {
+            height: 90px;
+            transition: all 0.25s ease;
+            -webkit-transition: all 0.25s ease;
+            -moz-transition: all 0.25s ease;
+            -ms-transition: all 0.25s ease;
+            -o-transition: all 0.25s ease;
+        }
+
+        /* Hamburger Button */
+        .nav-control {
+            display: none;
+        }
+
+        h1.logo {
+            position: relative;
+            float: left;
+            z-index: 300;
+            top: 0;
+            margin: 0;
+            line-height: 45px;
+            color: #000;
+            font-size: 20px;
+
+            @include respond-min(md) {
+                line-height: 90px;
+            }
+        }
+
+        @include respond-max(sm) {
+            .fusion-mobile-menu-icons [class*="fusion-icon-"] {
+                position: relative;
+                top: 12px;
+            }
+        }
+    }
+}
+
+.menu-bg {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .2);
+    transition: all 0.25s;
+}
+
+.menu-bg.on {
+    display: block;
+    opacity: 1;
+    z-index: 11;
+}
+
+.menu-bg.on.modal-bg {
+    z-index: 99999999;
+}

@@ -1,0 +1,73 @@
+.btn {
+  background-color: transparent;
+  border: 0;
+  font-family: $global-font-family;
+  min-width: 140px;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  padding: 10px 0;
+  &.btn-primary {
+    background-color: $color-primary;
+    color: #fff;
+  }
+  &.btn-secondary {
+    background-color: $color-secondary;
+    color: #fff;
+  }
+  &.btn-third {
+    background-color: #f1f1f1;
+    color: #666666;
+  }
+}
+.btn-wrap {
+  text-align: right;
+  margin-top: 2.5rem;
+}
+/* Hola Pro 공통 버튼 */
+a.btn-more {
+  display: inline-block;
+  position: relative;
+  background-color: $color-primary;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 100;
+  padding: 14px 30px;
+  color: #fff;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  @include respond-max(sm) {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+a.btn-more:hover {
+  color: #fff;
+}
+
+a.btn-more:after {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  vertical-align: text-bottom;
+  font-family: "icomoon";
+  font-size: 15px;
+  line-height: 22px;
+  color: #fff;
+  content: "\f105";
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-left: 10px;
+  @include respond-max(sm) {
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+  }
+}

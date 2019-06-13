@@ -1,0 +1,66 @@
+// form 요소 공통
+input,
+select,
+textarea {
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  font-weight: 500;
+  font-size: 15px;
+  color: #666666;
+  padding: 10px 15px;
+}
+input[type="button"],
+button {
+  &:hover {
+    cursor: pointer;
+  }
+}
+.custom-chk {
+  display: block;
+  position: relative;
+  padding-left: 2rem;
+  font-size: 0.9375rem;
+  color: #595757;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    &:checked ~ .checkmark {
+      background-color: $color-primary;
+      border: 0;
+      &:after {
+        display: block;
+      }
+    }
+  }
+  .checkmark {
+    position: absolute;
+    top: 50%;
+    margin-top: -12.5px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border: 1px solid #707070;
+    transition: all 0.35s;
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 9px;
+      top: 5px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+}

@@ -1,0 +1,43 @@
+/* Naviagation */
+.fusion-main-menu {
+  & > ul {
+    & > li {
+      & > a {
+        font-size: 15px;
+        .menu-text {
+          display: inline-block;
+          position: relative;
+          top: 10px;
+          padding: 0 10px;
+        }
+      }
+      &:not(:last-child) {
+        & > a {
+          .menu-text {
+            &:after {
+              position: absolute;
+              right: 0;
+              top: 0;
+              width: 1px;
+              height: 100%;
+              background-color: #dadada;
+              content: "";
+            }
+          }
+        }
+      }
+      &::last-child {
+        & > a .menu-text {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
+.fusion-mobile-menu-icons {
+  a {
+    margin-top: 16.25px;
+  }
+}
+
+/* 메인페이지 StyleSheet */

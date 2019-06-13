@@ -1,0 +1,22 @@
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.accent {
+  color: $color-primary;
+}
+.clearfix {
+  &:after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+}

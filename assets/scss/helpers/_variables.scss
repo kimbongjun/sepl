@@ -1,0 +1,36 @@
+// Variables
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+$white: #fff !default;
+$black: #000 !default;
+$gray-darker: lighten($black, 13.5%) !default; // #222
+$gray-dark: lighten($black, 20%) !default; // #333
+$gray: lighten($black, 33.5%) !default; // #555
+$gray-light: lighten($black, 46.7%) !default; // #777
+$gray-lighter: lighten($black, 93.5%) !default; // #eee
+
+$color-primary: #2076ff !default; // #337ab7
+$color-secondary: #b3bcca !default;
+$color-success: #5cb85c !default;
+$color-info: #5bc0de !default;
+$color-warning: #f0ad4e !default;
+$color-danger: #e82a2c !default;
+
+$color-primary2: lighten($color-primary, 3%) !default;
+$text-color: $gray-dark !default;
+
+//** Global textual link color.
+$link-color: $color-primary !default;
+//** Link hover color set via `darken()` function.
+$link-hover-color: darken($link-color, 15%) !default;
+
+$font-size-base: 16px !default;
+$font-size-large: ceil(($font-size-base * 1.25)) !default; // ~20px
+$font-size-regular: ceil(($font-size-base * 0.9375)) !default; // ~ 15px
+$font-size-small: ceil(($font-size-base * 0.875)) !default; // ~14px
+
+// Typography
+$noto-sans: "Noto Sans KR", -apple-system, "Roboto", "Segoe UI", Arial,
+  sans-serif !default;
+$global-font-family: $noto-sans !default;

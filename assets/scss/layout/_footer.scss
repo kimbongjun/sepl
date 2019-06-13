@@ -1,0 +1,147 @@
+// footer
+footer {
+  .fusion-copyright-content {
+    display: block;
+    width: auto;
+    .custom-footer-content {
+      figure {
+        @include respond-max(sm) {
+          width: 230px;
+        }
+      }
+      .copyright {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-left: -35px;
+        margin-right: -35px;
+        .copyright-col {
+          @include respond-max(sm) {
+            width: 100%;
+          }
+          width: 38.8%;
+          flex-direction: column;
+          padding: 0 35px;
+          h3 {
+            font-weight: 500;
+            color: #fff;
+            font-size: 1rem;
+            em {
+              margin-left: 5px;
+              font-style: normal;
+              color: #bbbbbb;
+              font-weight: 200;
+              font-size: 13px;
+            }
+          }
+          ul {
+            margin-left: -10px;
+            margin-right: -10px;
+            li {
+              display: inline-block;
+              vertical-align: middle;
+              a {
+                display: block;
+                position: relative;
+                padding: 0 10px;
+                font-weight: 200;
+                font-size: 15px;
+                color: #eeeeee;
+              }
+              &:first-child {
+                a {
+                  &:after {
+                    position: absolute;
+                    right: -1px;
+                    color: #fff;
+                    content: "|";
+                  }
+                }
+              }
+            }
+          }
+          p {
+            margin: 15px 0;
+          }
+          p,
+          small {
+            font-weight: 200;
+            font-size: 13px;
+            color: #eee;
+          }
+          &.social {
+            width: 22.4%;
+            @include respond-max(sm) {
+              width: 100%;
+            }
+            .fusion-social-networks {
+              overflow: visible;
+              .fusion-social-networks-wrapper {
+                margin: 0;
+                .fusion-social-network-icon {
+                  width: 44px;
+                  height: 44px;
+                  margin: 0;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  &:not(:last-child) {
+                    margin-right: 30px;
+                  }
+                  &:before {
+                    display: none;
+                  }
+                  &.fusion-icon-facebook {
+                    background-image: url(imgs/icon-facebook.png);
+                  }
+                  &.fusion-icon-twitter {
+                    background-image: url(imgs/icon-twitter.png);
+                  }
+                  &.fusion-icon-googleplus {
+                    background-image: url(imgs/icon-google.png);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .fusion-widget-area {
+    .menu {
+      li {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0;
+        border: 0;
+        &:first-child {
+          a {
+            padding-left: 0 !important;
+          }
+        }
+        a {
+          display: block;
+          position: relative;
+          padding: 10px 14px !important;
+          &:before {
+            display: none;
+          }
+        }
+        &:not(:last-child) {
+          a {
+            &:after {
+              position: absolute;
+              right: 0;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 1px;
+              height: calc(100% - 20px);
+              background-color: #eeeeee;
+              content: "";
+            }
+          }
+        }
+      }
+    }
+  }
+}

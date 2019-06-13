@@ -1,0 +1,153 @@
+/*
+Theme Name: Avada Child
+Description: Child theme for Avada theme
+Author: ThemeFusion
+Author URI: https://theme-fusion.com
+Template: Avada
+Version: 1.0.0
+Text Domain:  Avada
+*/
+@import url("/wp-content/themes/Avada-Child-Theme/assets/css/fonts/NotoSansKR/noto-sans-korean.css");
+/* Helper */
+
+@media only screen and (max-width: 800px) {
+  .mobile-mb20 {
+    margin-bottom: 20px !important;
+  }
+}
+
+[class*="-poweredby"] {
+  display: none;
+}
+
+/* kboard */
+#kboard-default-latest ul {
+  margin: 0;
+  padding: 0;
+  border-top: 3px solid #e6e6e6;
+}
+
+#kboard-default-latest ul li {
+  list-style: none;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+#kboard-default-latest ul li a {
+  display: block;
+  padding: 15px 0;
+  font-weight: 200;
+  font-size: 17px;
+  line-height: 1;
+  color: #555555;
+}
+@media only screen and (max-width: 400px) {
+  #kboard-default-latest ul li a {
+    font-size: 14px;
+  }
+}
+#kboard-default-latest ul li a .float-right {
+  color: #999999;
+}
+
+@media only screen and (max-width: 1024px) {
+  .list-lecture li {
+    width: 33.33%;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .list-lecture li {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .border-box:first-child {
+    margin-bottom: 20px !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .custom-footer-content figure {
+    margin-bottom: 10px;
+  }
+
+  .custom-footer-content .copyright p {
+    margin: 5px 0;
+  }
+  .social .fusion-social-networks .fusion-social-network-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .social {
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .tfs-slider .slide-content-container .fusion-title h3 {
+    font-size: 1.25rem !important;
+  }
+  .tfs-slider .slide-content-container .fusion-title h2 {
+    font-size: 1.85rem !important;
+  }
+  .index_bottom_box.location dd .btn-location {
+    margin-left: 0;
+  }
+  .index_bottom_box dl dt {
+    font-size: 2rem;
+  }
+  .index_bottom_box {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .index_bottom_box dl {
+    padding-left: 50px;
+  }
+  .index_bottom_box dl:before {
+    width: 40px;
+    height: 41px;
+  }
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("/wp-content/themes/Avada-Child-Theme/assets/css/fonts/icomoon-custom/icomoon.eot?rhmu7m");
+  src: url("/wp-content/themes/Avada-Child-Theme/assets/css/fonts/icomoon-custom/icomoon.eot?rhmu7m#iefix")
+      format("embedded-opentype"),
+    url("/wp-content/themes/Avada-Child-Theme/assets/css/fonts/icomoon-custom/icomoon.ttf?rhmu7m")
+      format("truetype"),
+    url("/wp-content/themes/Avada-Child-Theme/assets/css/fonts/icomoon-custom/icomoon.woff?rhmu7m")
+      format("woff"),
+    url("/wp-content/themes/Avada-Child-Theme/assets/css/fonts/icomoon-custom/icomoon.svg?rhmu7m#icomoon")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon-userinfo:before {
+  content: "\e900";
+}
+.icon-icon-complete:before {
+  content: "\e901";
+}
+.icon-icon-agree:before {
+  content: "\e902";
+}

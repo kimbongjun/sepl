@@ -1,0 +1,33 @@
+// base
+@import "helpers/variables"; // 변수
+@import "base/normalize"; // 초기화
+@import "helpers/mixins";
+@import "helpers/util";
+html {
+  // components
+  #content {
+    @import "components/form";
+    @import "components/kboard";
+    @import "components/member";
+    @import "components/button";
+    // @import "components/slick";
+  }
+
+  // // layout
+  // @import "layout/header";
+  // @import "layout/content";
+  @import "layout/footer";
+  @import "layout/navigation";
+  @import "layout/woocommerce";
+  // // pages
+  @import "pages/home";
+  @import "pages/sub";
+
+  font-size: $font-size-base;
+  @include respond-max(sm) {
+    font-size: $font-size-regular;
+  }
+  @include respond-max(xs) {
+    font-size: $font-size-small;
+  }
+}

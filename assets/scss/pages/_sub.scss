@@ -1,0 +1,115 @@
+body {
+  .titleBanner {
+    display: table;
+    width: 100%;
+    height: 15.625rem;
+    text-align: center;
+    background-image: url(imgs/title_banner.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    .titleBanner__text {
+      display: table-cell;
+      vertical-align: middle;
+      h2 {
+        font-size: 3.125rem;
+        line-height: 1;
+        font-weight: 600;
+        color: #fff;
+        margin-top: 0;
+        margin-bottom: 2.1875rem;
+      }
+      p {
+        font-size: 1.375rem;
+        font-weight: 200;
+        color: #fff;
+        margin-bottom: 0;
+      }
+    }
+  }
+  #content {
+    h3.common-tit {
+      margin-top: 0;
+      padding-bottom: 1.5rem;
+      font-weight: 700;
+      font-size: 2.25rem;
+      color: #202c3f;
+      border-bottom: 1px solid #cccccc;
+      em {
+        font-style: normal;
+        font-weight: 200;
+        font-size: 1.25rem;
+        color: #999999;
+        letter-spacing: -1px;
+        @include respond-max(sm) {
+          display: block;
+        }
+      }
+    }
+    .fusion-tabs {
+      .nav {
+        margin-bottom: 1.5625rem;
+        .nav-tabs {
+          > li {
+            min-width: 210px;
+            border-width: 0;
+            a {
+              border-top-width: 0;
+              background-color: #fbfaf9;
+              h4 {
+                transition: all 0.5s;
+                font-size: 18px;
+              }
+            }
+            &.active {
+              border-width: 0;
+              .tab-link {
+                background-color: #ffffff;
+                border-top-width: 1px;
+                h4 {
+                  font-weight: 500;
+                  font-size: 18px;
+                  color: #202c3f;
+                }
+              }
+            }
+          }
+        }
+      }
+      &.location_tab {
+        .tab-content {
+          .tab-pane {
+            padding: 0;
+            ul {
+              background-color: #f8f8f8;
+              padding: 25px 30px;
+              li {
+                position: relative;
+                font-weight: normal;
+                font-size: 1rem;
+                padding-left: 1rem;
+                color: #555555;
+                strong {
+                  color: $color-primary;
+                }
+                &:before {
+                  position: absolute;
+                  left: 0;
+                  top: 10px;
+                  width: 4px;
+                  height: 4px;
+                  background-color: $color-primary;
+                  content: "";
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    // .panel {
+    //   padding: 3.75rem 30px;
+    //   background-color: #f8f8f8;
+    //   border: 1px solid #e1e1e1;
+    // }
+  }
+}

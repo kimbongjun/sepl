@@ -1,0 +1,16 @@
+body {
+    &.home {
+        @include respond-min(sm) {
+            #main {
+                padding-top: 90px;
+            }
+        }
+    }
+
+    #main {
+        @include respond-max(sm) {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+}

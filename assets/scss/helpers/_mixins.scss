@@ -1,0 +1,76 @@
+/* **************************************** *
+ * Media Query
+ * **************************************** */
+$screen-xs: 480px;
+$screen-sm: 800px;
+$screen-md: 992px;
+$screen-lg: 1100px;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max: ($screen-xs + 1);
+$screen-sm-max: ($screen-sm + 1);
+$screen-md-max: ($screen-md + 1);
+
+@mixin respond-min($media) {
+  @if $media==xs {
+    @media (min-width: $screen-xs-max) {
+      @content;
+    }
+  } @else if $media==sm {
+    @media (min-width: $screen-sm-max) {
+      @content;
+    }
+  } @else if $media==md {
+    @media (min-width: $screen-md-max) {
+      @content;
+    }
+  } @else if $media==lg {
+    @media (min-width: $screen-lg) {
+      @content;
+    }
+  }
+}
+
+@mixin respond-max($media) {
+  @if $media==xs {
+    @media (max-width: $screen-xs) {
+      @content;
+    }
+  } @else if $media==sm {
+    @media (max-width: $screen-sm) {
+      @content;
+    }
+  } @else if $media==md {
+    @media (max-width: $screen-md) {
+      @content;
+    }
+  }
+}
+
+@mixin respond-custom-max($custom) {
+  @media (max-width: $custom) {
+    @content;
+  }
+}
+@mixin respond-custom-min($custom) {
+  @media (min-width: $custom) {
+    @content;
+  }
+}
+/* **************************************** *
+ * Placeholder
+ * **************************************** */
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
